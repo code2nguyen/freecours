@@ -118,3 +118,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS¶ = [
+	BASE_DIR + 'assets',
+	BASE_DIR + 'css',
+	BASE_DIR + 'bower_components',
+	BASE_DIR + 'components',
+]
