@@ -1,6 +1,6 @@
 <dom-module id="audio-button">
-	<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
-    <link rel="import" href="/bower_components/iron-icons/av-icons.html">
+	<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/iron-icons/av-icons.html">
 
 	<template>
 		<style>
@@ -13,7 +13,7 @@
 	</template>
 	<script>
 		Polymer({
-	    	is: "audio-button",	    
+	    	is: "audio-button",
 	    	properties: {
 	    		src: String
 	    	},
@@ -22,14 +22,14 @@
 				source.src = this.src;
 				source.type = 'audio/mp3';
 				this.$.audioFile.appendChild(source);
-				
+
 	    		this.$.playButton.onclick = function(event) {
 	    			this.parentElement.$.audioFile.play();
-					event.preventDefault(); 
+					event.preventDefault();
 					event.stopPropagation();
 	    		}
   			}
-  			   
+
 	  	});
 	</script>
 </dom-module>

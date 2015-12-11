@@ -118,9 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS¶ = [
-	BASE_DIR + 'assets',
-	BASE_DIR + 'css',
-	BASE_DIR + 'bower_components',
-	BASE_DIR + 'components',
-]
+STATICFILES_DIRS = [BASE_DIR + '/freecours/static',]
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR + '/freecours/media'

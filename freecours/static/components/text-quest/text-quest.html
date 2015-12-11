@@ -1,19 +1,19 @@
 <dom-module id="text-quest">
 
-	<link rel="import" href="/bower_components/paper-input/paper-input.html">
+	<link rel="import" href="bower_components/paper-input/paper-input.html">
 
 	<template>
 
 	    <style>
 	      :host {
-	        display: inline-block;	  	      
+	        display: inline-block;
 	      }
-	      
+
 	      .contentWrapper > ::content {
 	      	display:none;
 	      }
 
-	    </style>	    
+	    </style>
 	    <paper-input id="textInput" no-label-float="true"></paper-input>
 	    <div class="contentWrapper">
 	    	<content></content>
@@ -23,11 +23,11 @@
 	<script>
 	  Polymer({
 	    is: "text-quest",
-	    
+
 	    ready: function() {
     		this.$.textInput.size = this.textContent.trim().length;
     		this.$.textInput.maxlength = this.textContent.trim().length;
-  		}	   
+  		}
 	  });
 
 	</script>
