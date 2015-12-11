@@ -94,6 +94,17 @@ li {
 	color:#979FA3;
 }
 
+.header .title {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.header .menu {
+	display: inline;
+	padding-top: 15px;
+	float: right;
+}
+
 .main-content {
 	position: absolute;
 	top: 61px;
@@ -123,14 +134,38 @@ li {
 	position: relative;
 	height: 55px;
 	width: 100%;
-	padding-left: 16px;
-	padding-right: 16px;
 	background-color: #979FA3;
 }
 .content {
 	padding: 16px;
 }
 
+.nav {
+	list-style: none;
+	display: inline-block;
+	padding-top: 5px;
+	padding-left:25px;
+}
+
+.nav li {
+	float: left;
+	padding-right: 35px;
+}
+
+
+.nav li > a {
+    color: #D3D7E8;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.nav li > a:hover,
+.nav li > a:focus,
+.nav li > a.active {
+    color: #FAFCFC;
+}
 
 
 

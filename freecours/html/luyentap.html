@@ -5,7 +5,7 @@
 {% block top-menu %}
 <ul class="nav">
 		<li><a href="#">Bài học hàng ngày</a></li>
-		<li><a href="{% url 'luyentap' %}">Luyện tập</a></li>
+		<li><a href="#" class="active">Luyện tập</a></li>
 		<li><a href="#">Từ vựng</a></li>
 		<li><a href="#">Ngữ pháp</a></li>
 </ul>
@@ -13,7 +13,9 @@
 
 {% block content %}
     <div>
-      <h1>Hoc tiếng pháp trực tuyến  miễn phí</h1>
+    	{% for ex in exercises %}
+				{{ex}}
+			{% endfor%}
     </div>
 {% endblock %}
 
